@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
@@ -11,7 +10,7 @@ const Dataset: React.FC = () => {
           <span className="text-sm font-medium text-indiana-crimson uppercase tracking-wider">
             Research Data
           </span>
-          <h1 className="mt-3 text-4xl md:text-5xl font-playfair font-bold">
+          <h1 className="mt-3 text-4xl md:text-5xl font-montserrat font-bold">
             Dataset Information
           </h1>
           <p className="mt-6 text-lg text-gray-600">
@@ -63,7 +62,7 @@ const Dataset: React.FC = () => {
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-gray-100">
+                  <tr className="bg-gray-20">
                     <th className="py-3 px-4 font-semibold">Category</th>
                     <th className="py-3 px-4 font-semibold">Number of Reviews</th>
                     <th className="py-3 px-4 font-semibold">Time Period</th>
@@ -73,19 +72,19 @@ const Dataset: React.FC = () => {
                 <tbody className="divide-y">
                   <tr>
                     <td className="py-3 px-4">Digital Treadmills</td>
-                    <td className="py-3 px-4">~10,000</td>
+                    <td className="py-3 px-4">~50,000</td>
                     <td className="py-3 px-4">2020-2024</td>
                     <td className="py-3 px-4">120 words</td>
                   </tr>
                   <tr>
                     <td className="py-3 px-4">Exercise Bikes</td>
-                    <td className="py-3 px-4">~8,500</td>
+                    <td className="py-3 px-4">~35,000</td>
                     <td className="py-3 px-4">2020-2024</td>
                     <td className="py-3 px-4">105 words</td>
                   </tr>
                   <tr>
                     <td className="py-3 px-4">Combined Dataset</td>
-                    <td className="py-3 px-4">~18,500</td>
+                    <td className="py-3 px-4">~85,000</td>
                     <td className="py-3 px-4">2020-2024</td>
                     <td className="py-3 px-4">113 words</td>
                   </tr>

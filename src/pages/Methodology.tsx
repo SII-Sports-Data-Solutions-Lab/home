@@ -11,7 +11,7 @@ const Methodology: React.FC = () => {
           <span className="text-sm font-medium text-indiana-crimson uppercase tracking-wider">
             Research Approach
           </span>
-          <h1 className="mt-3 text-4xl md:text-5xl font-playfair font-bold">
+          <h1 className="mt-3 text-4xl md:text-5xl font-montserrat font-bold">
             Research Methodology
           </h1>
           <p className="mt-6 text-lg text-gray-600">

@@ -7,8 +7,8 @@ const NotFound: React.FC = () => {
   return (
     <Layout>
       <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-8xl font-playfair font-bold text-indiana-crimson animate-scale-up">404</h1>
-        <h2 className="mt-8 text-3xl font-playfair font-medium animate-fade-in delay-100">Page Not Found</h2>
+        <h1 className="text-8xl font-montserrat font-bold text-indiana-crimson animate-scale-up">404</h1>
+        <h2 className="mt-8 text-3xl font-montserrat font-medium animate-fade-in delay-100">Page Not Found</h2>
         <p className="mt-4 text-gray-600 max-w-md animate-fade-in delay-200">
           We couldn't find the page you were looking for. It might have been moved or doesn't exist.
         </p>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -7,6 +6,7 @@ interface RoadmapStepProps {
   description: string;
   date: string;
   index: number;
+  status: 'completed' | 'in-progress' | 'not-started';
   isLast?: boolean;
 }
 
@@ -15,15 +15,20 @@ const RoadmapStep: React.FC<RoadmapStepProps> = ({
   description, 
   date, 
   index, 
+  status,
   isLast = false 
 }) => (
   <div className={cn("relative flex flex-col md:flex-row", !isLast && "pb-8")}>
     <div className="flex flex-col items-center mr-4 md:mr-8">
-      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-indiana-crimson text-white font-semibold">
+      <div className={cn("flex items-center justify-center w-10 h-10 rounded-full font-semibold", {
+        'bg-green-500 text-white': status === 'completed',
+        'bg-yellow-500 text-white': status === 'in-progress',
+        'bg-gray-300 text-gray-700': status === 'not-started'
+      })}>
         {index + 1}
       </div>
       {!isLast && (
-        <div className="w-px h-full bg-indiana-crimson/30 mt-2"></div>
+        <div className="w-px h-full bg-gray-300 mt-2"></div>
       )}
     </div>
     <div className={cn(
@@ -48,31 +53,41 @@ interface RoadmapCardProps {
 }
 
 const RoadmapCard: React.FC<RoadmapCardProps> = ({ className }) => {
-  const roadmapSteps = [
+  const roadmapSteps: Array<{
+    title: string;
+    description: string;
+    date: string;
+    status: 'completed' | 'in-progress' | 'not-started';
+  }> = [
     {
       title: "Project Initiation",
       description: "Define project scope, objectives, and deliverables. Establish team structure and roles.",
-      date: "January 2024"
+      date: "January 2024",
+      status: "completed"
     },
     {
       title: "Data Collection",
       description: "Scrape customer reviews from e-commerce platforms and fitness review websites.",
-      date: "February 2024"
+      date: "February 2024",
+      status: "completed"
     },
     {
       title: "Data Preprocessing",
       description: "Clean and preprocess collected data. Annotate data for sentiment analysis.",
-      date: "March 2024"
+      date: "March 2024",
+      status: "in-progress"
     },
     {
       title: "LDA Model Development",
       description: "Apply Latent Dirichlet Allocation to extract key topics from reviews.",
-      date: "April 2024"
+      date: "April 2024",
+      status: "not-started"
     },
     {
       title: "Analysis & Evaluation",
       description: "Perform sentiment analysis and evaluate results. Generate insights and findings.",
-      date: "May 2024"
+      date: "May 2024",
+      status: "not-started"
     }
   ];
 
@@ -86,6 +101,7 @@ const RoadmapCard: React.FC<RoadmapCardProps> = ({ className }) => {
             description={step.description}
             date={step.date}
             index={index}
+            status={step.status}
             isLast={index === roadmapSteps.length - 1}
           />
         ))}
