@@ -9,10 +9,10 @@ const Team: React.FC = () => {
     <Layout>
       <section className="py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <span className="text-sm font-medium text-indiana-crimson uppercase tracking-wider">
+          <span className="text-sm font-medium text-sports-purple uppercase tracking-wider">
             Meet Our Researchers
           </span>
-          <h1 className="mt-3 text-4xl md:text-5xl font-playfair font-bold">
+          <h1 className="mt-3 text-4xl md:text-5xl font-montserrat font-bold">
             Research Team
           </h1>
           <p className="mt-6 text-lg text-gray-600">
@@ -28,7 +28,7 @@ const Team: React.FC = () => {
             Our interdisciplinary research team brings together expertise in data science, natural language processing, machine learning, and consumer behavior. Each team member contributes specialized knowledge and skills to ensure the success of this project.
           </p>
           <p>
-            The team is affiliated with Indiana University and collaborates with industry partners to ensure that the research findings have both academic rigor and practical relevance.
+            The team is affiliated with the Sports Innovation Institute and collaborates with industry partners to ensure that the research findings have both academic rigor and practical relevance.
           </p>
         </ProjectCard>
 
@@ -49,7 +49,7 @@ const Team: React.FC = () => {
             animationDelay="delay-300"
           >
             <p>
-              We gratefully acknowledge the support of Indiana University and its resources that make this research possible. We also thank the e-commerce platforms that provide access to their data, as well as the many consumers whose reviews form the basis of our analysis. Special thanks to our advisors and mentors who provide guidance and feedback throughout this project.
+              We gratefully acknowledge the support of the Sports Innovation Institute and its resources that make this research possible. We also thank the e-commerce platforms that provide access to their data, as well as the many consumers whose reviews form the basis of our analysis. Special thanks to our advisors and mentors who provide guidance and feedback throughout this project.
             </p>
           </ProjectCard>
         </div>

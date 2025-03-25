@@ -22,6 +22,8 @@ export default {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -29,6 +31,13 @@ export default {
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        sports: {
+          purple: '#6b21a8',
+          darkpurple: '#4a1d96',
+          cream: '#FAF5FF',
+          accent: '#9333ea',
+          red: '#990000', // Keeping IU red for brand consistency if needed
+        },
         indiana: {
           red: '#990000',
           cream: '#EDEBEB',

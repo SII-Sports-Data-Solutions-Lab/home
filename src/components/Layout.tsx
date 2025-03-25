@@ -2,6 +2,7 @@
 import React, { ReactNode } from 'react';
 import NavigationBar from './NavigationBar';
 import PageTransition from './PageTransition';
+import { ArrowUpRight } from 'lucide-react';
 
 interface LayoutProps {
   children: ReactNode;
@@ -18,17 +19,42 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </PageTransition>
       </main>
-      <footer className="bg-indiana-crimson text-white py-8">
+      <footer className="bg-gradient-to-r from-purple-800 to-purple-900 text-white py-10">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-playfair font-medium">E-commerce Reviews Analysis Project</h3>
-              <p className="text-white/80 mt-1">Indiana University</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/lovable-uploads/9a5b28fd-3737-422c-aea0-12d90b38c7bf.png" 
+                  alt="Sports Innovation Institute Logo" 
+                  className="h-12 mr-3" 
+                />
+              </div>
+              <h3 className="text-xl font-inter font-semibold mb-2">Sports Innovation Institute</h3>
+              <p className="text-white/80 text-sm">Research Project Website</p>
             </div>
-            <div className="text-white/80 text-center md:text-right">
-              <p>&copy; {new Date().getFullYear()} Indiana University</p>
-              <p className="mt-1">Research Project Website</p>
+            
+            <div className="text-sm">
+              <h4 className="font-semibold mb-3 uppercase tracking-wider text-purple-200">Our Mission</h4>
+              <p className="text-white/80 leading-relaxed">
+                Our passion is rivaled only by our drive to inspire the next great business or sports-related idea that goes well beyond the game.
+              </p>
             </div>
+            
+            <div>
+              <h4 className="font-semibold mb-3 uppercase tracking-wider text-purple-200">Connect</h4>
+              <a href="#" className="flex items-center text-white/80 hover:text-white transition-colors mb-2 group">
+                <span>Support Our Research</span>
+                <ArrowUpRight className="ml-1 h-3 w-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
+              <p className="text-white/60 text-sm mt-4">&copy; {new Date().getFullYear()} Sports Innovation Institute</p>
+            </div>
+          </div>
+          
+          <div className="mt-8 pt-6 border-t border-white/10 text-sm text-white/60">
+            <p className="leading-relaxed">
+              The Sports Innovation Institute blends academic thinking with an entrepreneurial spirit to create, discover, and promote unique products, services, and game-day experiences. Your charitable gifts support this work and position IU Indianapolis as the multi-disciplinary, game-changing leader in sports research, talent development, and market innovation.
+            </p>
           </div>
         </div>
       </footer>

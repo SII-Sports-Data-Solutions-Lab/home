@@ -9,10 +9,10 @@ const Index: React.FC = () => {
     <Layout>
       <section className="py-12 md:py-20">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <span className="text-sm font-medium text-indiana-crimson uppercase tracking-wider">
-            Indiana University Research Project
+          <span className="text-sm font-medium text-sports-purple uppercase tracking-wider">
+            Sports Innovation Institute Research Project
           </span>
-          <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-playfair font-bold leading-tight">
+          <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold leading-tight">
             Analyzing E-commerce Reviews on Digital Treadmills and Exercise Bikes
           </h1>
           <p className="mt-6 text-xl text-gray-600">
@@ -48,7 +48,7 @@ const Index: React.FC = () => {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-3xl md:text-4xl font-playfair font-semibold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-montserrat font-semibold text-center mb-12">
             Project Roadmap
           </h2>
           <RoadmapCard />

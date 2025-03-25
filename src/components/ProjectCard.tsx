@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       animationDelay,
       className
     )}>
-      <h2 className="text-2xl md:text-3xl font-playfair font-semibold text-indiana-crimson mb-4">
+      <h2 className="text-2xl md:text-3xl font-montserrat font-semibold text-sports-purple mb-4">
         {title}
       </h2>
       <div className="text-gray-700">
