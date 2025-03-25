@@ -10,7 +10,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
       <NavigationBar />
       <main className="flex-grow pt-24 pb-12">
         <PageTransition>
@@ -19,13 +19,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </PageTransition>
       </main>
-      <footer className="bg-gradient-to-r from-purple-800 to-purple-900 text-white py-10">
+      <footer className="bg-gradient-to-r from-purple-900 to-purple-800 text-white py-10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center mb-4">
                 <img 
-                  src="/lovable-uploads/9a5b28fd-3737-422c-aea0-12d90b38c7bf.png" 
+                  src="/lovable-uploads/ba38ab43-24a4-490d-8d2a-2622669cb079.png" 
                   alt="Sports Innovation Institute Logo" 
                   className="h-12 mr-3" 
                 />
