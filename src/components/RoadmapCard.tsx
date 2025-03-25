@@ -36,8 +36,8 @@ const RoadmapStep: React.FC<RoadmapStepProps> = ({
     )}>
       <div className="glass-card p-5 rounded-lg mb-2">
         <h3 className="text-xl font-semibold text-indiana-crimson">{title}</h3>
-        <time className="text-sm text-gray-500 mb-2 block">{date}</time>
-        <p className="text-gray-700">{description}</p>
+        <time className="text-sm text-gray-400 mb-2 block">{date}</time>
+        <p className="text-gray-200">{description}</p>
       </div>
     </div>
   </div>
