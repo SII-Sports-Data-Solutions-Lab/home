@@ -7,22 +7,22 @@
 
 @layer base {
   :root {
-    --background: 0 0% 15%;
+    --background: 0 0% 20%;
     --foreground: 210 40% 98%;
 
-    --card: 0 0% 20%;
+    --card: 0 0% 25%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 15%;
+    --popover: 0 0% 20%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 270 76% 53%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 25%;
+    --secondary: 210 40% 30%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 20%;
+    --muted: 210 40% 25%;
     --muted-foreground: 215 20.2% 75.1%;
 
     --accent: 270 76% 53%;
@@ -31,8 +31,8 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 30%;
-    --input: 214.3 31.8% 30%;
+    --border: 214.3 31.8% 35%;
+    --input: 214.3 31.8% 35%;
     --ring: 270 76% 53%;
 
     --radius: 0.75rem;
@@ -44,7 +44,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-gray-900 text-gray-100 font-poppins;
+    @apply bg-gray-800 text-gray-100 font-poppins;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   h1, h2, h3, h4, h5, h6 {

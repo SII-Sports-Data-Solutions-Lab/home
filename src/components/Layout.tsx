@@ -10,7 +10,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
+    <div className="flex flex-col min-h-screen bg-gray-800 text-gray-100">
       <NavigationBar />
       <main className="flex-grow pt-24 pb-12">
         <PageTransition>
