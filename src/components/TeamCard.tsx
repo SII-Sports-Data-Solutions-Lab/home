@@ -42,22 +42,22 @@ const TeamCard: React.FC<TeamCardProps> = ({ className }) => {
     {
       name: "Aditya Naik",
       role: "Research Assistant",
-      imageUrl: "/lovable-uploads/a57539df-fb1b-4ae4-aaa1-173af06538d4.png"
+      imageUrl: "./assets/a57539df-fb1b-4ae4-aaa1-173af06538d4.png"
     },
     {
       name: "Raghuveer Venkatesh",
       role: "Research Assistant",
-      imageUrl: "/lovable-uploads/5345d883-eaba-470f-ab0d-4f2b15047e5d.png"
+      imageUrl: "./assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png"
     },
     {
       name: "Sai Pranam Chillakuru",
       role: "Research Assistant",
-      imageUrl: "/lovable-uploads/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png"
+      imageUrl: "./assets/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png"
     },
     {
       name: "Dr. Liz Ann Wanless",
       role: "Director of the Sports Innovation Institute",
-      imageUrl: "/lovable-uploads/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png"
+      imageUrl: "./assets/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png"
     }
   ];
 

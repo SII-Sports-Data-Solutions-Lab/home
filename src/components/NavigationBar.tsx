@@ -46,7 +46,7 @@ const NavigationBar: React.FC = () => {
           className="flex items-center gap-2 text-sports-purple hover:opacity-90 transition-opacity"
         >
           <img 
-            src="/lovable-uploads/ba38ab43-24a4-490d-8d2a-2622669cb079.png" 
+            src="./assets/ba38ab43-24a4-490d-8d2a-2622669cb079.png" 
             alt="SII Logo" 
             className="h-10 w-auto"
           />

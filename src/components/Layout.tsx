@@ -25,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <div className="flex items-center mb-4">
                 <img 
-                  src="/lovable-uploads/ba38ab43-24a4-490d-8d2a-2622669cb079.png" 
+                  src="./assets/ba38ab43-24a4-490d-8d2a-2622669cb079.png" 
                   alt="Sports Innovation Institute Logo" 
                   className="h-12 mr-3" 
                 />
