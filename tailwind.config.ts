@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -32,11 +31,11 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         sports: {
-          purple: '#6b21a8',
-          darkpurple: '#4a1d96',
-          cream: '#FAF5FF',
-          accent: '#9333ea',
-          red: '#990000', // Keeping IU red for brand consistency if needed
+          emerald: '#10B981',    // emerald-500
+          darkEmerald: '#059669', // emerald-600
+          cream: '#F1F5F9',      // Updated to a more neutral cream
+          accent: '#34D399',     // emerald-400
+          red: '#990000',        // Keeping IU red for brand consistency
         },
         indiana: {
           red: '#990000',
