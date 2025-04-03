@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import AppRoutes from "./AppRoutes";
 
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -13,6 +14,8 @@ const queryClient = new QueryClient({
     },
   },
 });
+
+const basePath = import.meta.env.BASE_URL || "/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>

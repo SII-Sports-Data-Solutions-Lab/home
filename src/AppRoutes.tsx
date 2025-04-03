@@ -1,14 +1,13 @@
+// src/AppRoutes.tsx - Updated version
 import { Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Suspense, lazy } from 'react';
 
 // Lazy load all pages
 const Index = lazy(() => import("./pages/Index"));
-const Overview = lazy(() => import("./pages/Overview"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Team = lazy(() => import("./pages/Team"));
-const Dataset = lazy(() => import("./pages/Dataset"));
-const Methodology = lazy(() => import("./pages/Methodology"));
+const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const AppRoutes = () => {
@@ -29,11 +28,20 @@ const AppRoutes = () => {
         }>
           <Routes location={location}>
             <Route path="/" element={<Index />} />
-            <Route path="/overview" element={<Overview />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/team" element={<Team />} />
-            <Route path="/dataset" element={<Dataset />} />
-            <Route path="/methodology" element={<Methodology />} />
+            
+            {/* Project-specific routes */}
+            <Route path="/projects/review-analysis" element={<ProjectDetail projectId="review-analysis" />} />
+            <Route path="/projects/review-analysis/overview" element={<ProjectDetail projectId="review-analysis" activeTab="overview" />} />
+            <Route path="/projects/review-analysis/dataset" element={<ProjectDetail projectId="review-analysis" activeTab="dataset" />} />
+            <Route path="/projects/review-analysis/methodology" element={<ProjectDetail projectId="review-analysis" activeTab="methodology" />} />
+            
+            {/* Legacy route support - redirect to new project paths */}
+            <Route path="/overview" element={<ProjectDetail projectId="review-analysis" activeTab="overview" />} />
+            <Route path="/dataset" element={<ProjectDetail projectId="review-analysis" activeTab="dataset" />} />
+            <Route path="/methodology" element={<ProjectDetail projectId="review-analysis" activeTab="methodology" />} />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
