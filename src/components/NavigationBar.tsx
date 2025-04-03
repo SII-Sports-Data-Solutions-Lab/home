@@ -10,6 +10,7 @@ const NavigationBar: React.FC = () => {
   const navItems = [
     { title: 'Home', path: '/' },
     { title: 'Overview', path: '/overview' },
+    { title: 'Projects', path: '/projects' },
     { title: 'Team', path: '/team' },
     { title: 'Dataset', path: '/dataset' },
     { title: 'Methodology', path: '/methodology' },
