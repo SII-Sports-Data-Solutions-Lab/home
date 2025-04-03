@@ -1,4 +1,4 @@
-// src/pages/Projects.tsx - Updated version
+// In src/components/Projects.tsx
 import React from 'react';
 import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
               A comprehensive analysis of customer reviews for digital fitness equipment, using natural language processing and machine learning techniques to uncover patterns and insights.
             </p>
             <div className="flex justify-end mt-6">
-              <Link to="/projects/review-analysis/overview" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
+              <Link to="/projects/review-analysis" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
                 View Project <ArrowRight className="ml-1 inline h-4 w-4" />
               </Link>
             </div>

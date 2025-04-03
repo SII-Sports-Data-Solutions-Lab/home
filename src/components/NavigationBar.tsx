@@ -54,7 +54,7 @@ const NavigationBar: React.FC = () => {
           className="flex items-center gap-2 text-indiana-crimson hover:opacity-90 transition-opacity"
         >
           <img 
-            src={`${import.meta.env.BASE_URL}/assets/ba38ab43-24a4-490d-8d2a-2622669cb079.png`}
+            src={`/assets/ba38ab43-24a4-490d-8d2a-2622669cb079.png`}
             alt="SII Logo" 
             className="h-10 w-auto"
           />
