@@ -19,33 +19,33 @@ const RoadmapStep: React.FC<RoadmapStepProps> = ({
   isLast = false 
 }) => (
   <div className={cn("relative flex flex-col md:flex-row", !isLast && "pb-8")}>
-    <div className="flex flex-col items-center mr-4 md:mr-8">
-      <div className={cn("flex items-center justify-center w-10 h-10 rounded-full font-semibold", {
-        'bg-green-500 text-white': status === 'completed',
-        'bg-yellow-500 text-white': status === 'in-progress',
-        'bg-gray-300 text-gray-700': status === 'not-started'
-      })}>
-        {index + 1}
-      </div>
-      {!isLast && (
-        <div className="w-px h-full bg-gray-300 mt-2"></div>
-      )}
+  <div className="flex flex-col items-center mr-4 md:mr-8">
+    <div className={cn("flex items-center justify-center w-10 h-10 rounded-full font-semibold", {
+      'bg-green-600 text-white': status === 'completed',
+      'bg-yellow-500 text-white': status === 'in-progress',
+      'bg-gray-300 text-gray-700': status === 'not-started'
+    })}>
+      {index + 1}
     </div>
-    <div className={cn(
-      "flex-1 animate-fade-in",
-      { "delay-100": index === 0 },
-      { "delay-200": index === 1 },
-      { "delay-300": index === 2 },
-      { "delay-400": index === 3 },
-      { "delay-500": index === 4 }
-    )}>
-      <div className="glass-card p-5 rounded-lg mb-2">
-        <h3 className="text-xl font-semibold text-indiana-crimson">{title}</h3>
-        <time className="text-sm text-gray-400 mb-2 block">{date}</time>
-        <p className="text-gray-200">{description}</p>
-      </div>
+    {!isLast && (
+      <div className="w-px h-full bg-gray-300 mt-2"></div>
+    )}
+  </div>
+  <div className={cn(
+    "flex-1 animate-fade-in",
+    { "delay-100": index === 0 },
+    { "delay-200": index === 1 },
+    { "delay-300": index === 2 },
+    { "delay-400": index === 3 },
+    { "delay-500": index === 4 }
+  )}>
+    <div className="bg-white p-5 rounded-lg shadow-md mb-2 border border-gray-200">
+      <h3 className="text-xl font-semibold text-indiana-crimson">{title}</h3>
+      <time className="text-sm text-gray-500 mb-2 block">{date}</time>
+      <p className="text-gray-700">{description}</p>
     </div>
   </div>
+</div>
 );
 
 interface RoadmapCardProps {

@@ -17,14 +17,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className={cn(
-      "glass-card rounded-xl p-6 md:p-8 animate-scale-up",
+      "bg-white rounded-xl p-6 md:p-8 shadow-md animate-scale-up border border-gray-200",
       animationDelay,
       className
     )}>
-      <h2 className="text-2xl md:text-3xl font-montserrat font-semibold text-sports-purple mb-4">
+      <h2 className="text-2xl md:text-3xl font-montserrat font-semibold text-indiana-crimson mb-4">
         {title}
       </h2>
-      <div className="text-gray-200">
+      <div className="text-gray-700">
         {children}
       </div>
     </div>

@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 20%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
 
-    --card: 0 0% 25%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 0 0% 20%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 270 76% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 92% 25%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 30%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 80% 40%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 25%;
-    --muted-foreground: 215 20.2% 75.1%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 270 76% 53%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 92% 25%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 35%;
-    --input: 214.3 31.8% 35%;
-    --ring: 270 76% 53%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 92% 25%;
 
     --radius: 0.75rem;
   }
@@ -43,115 +43,13 @@
     @apply border-border;
   }
   body {
-    @apply bg-gray-100 text-gray-400 font-montserrat;
+    @apply bg-gray-50 text-gray-900 font-montserrat;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-montserrat font-medium;
+    @apply font-montserrat font-medium text-indiana-crimson;
   }
   p, span, div, a, li, ul, ol, input, button, textarea {
     @apply font-montserrat;
   }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .page-transition-enter {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  
-  .page-transition-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 400ms, transform 400ms;
-  }
-  
-  .page-transition-exit {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .page-transition-exit-active {
-    opacity: 0;
-    transform: translateY(-8px);
-    transition: opacity 400ms, transform 400ms;
-  }
-}
-
-/* Custom animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes scaleUp {
-  from {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-.animate-slide-in {
-  animation: slideInRight 0.6s ease-out forwards;
-}
-
-.animate-scale-up {
-  animation: scaleUp 0.5s ease-out forwards;
-}
-
-.glass-card {
-  backdrop-filter: blur(12px);
-  background-color: rgba(30, 30, 40, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-/* Animation delays */
-.delay-100 {
-  animation-delay: 100ms;
-}
-
-.delay-200 {
-  animation-delay: 200ms;
-}
-
-.delay-300 {
-  animation-delay: 300ms;
-}
-
-.delay-400 {
-  animation-delay: 400ms;
-}
-
-.delay-500 {
-  animation-delay: 500ms;
 }
