@@ -6,7 +6,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/SII-Sports-Data-Solutions-Lab/home-website/',
+  base: '/home-website/',
   server: {
     host: "::",
     port: 8080,
