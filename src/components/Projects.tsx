@@ -1,4 +1,4 @@
-// In src/components/Projects.tsx
+// src/pages/Projects.tsx
 import React from 'react';
 import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
@@ -37,11 +37,11 @@ const Projects: React.FC = () => {
           </ProjectCard>
           
           <ProjectCard 
-            title="Feature Importance Analysis" 
+            title="NFL Big Data Bowl Guidebook" 
             animationDelay="delay-200"
           >
             <p className="mb-4">
-              A comprehensive study of which features matter most to consumers when purchasing digital treadmills and exercise bikes. Our analysis ranks features by importance based on frequency of mention and sentiment intensity in reviews.
+              A comprehensive guidebook for NFL enthusiasts and analysts, detailing the methodologies and insights from the NFL Big Data Bowl competition. This project aims to bridge the gap between data science and sports analytics, providing a resource for both new and experienced analysts.
             </p>
             <div className="flex justify-end mt-4">
               <a href="#" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
@@ -50,19 +50,7 @@ const Projects: React.FC = () => {
             </div>
           </ProjectCard>
 
-          <ProjectCard 
-            title="Sentiment Trend Tracker" 
-            animationDelay="delay-300"
-          >
-            <p className="mb-4">
-              A longitudinal analysis of how consumer sentiments toward digital fitness equipment have evolved over time. This project tracks changes in opinions, expectations, and satisfaction levels from 2020 to 2024.
-            </p>
-            <div className="flex justify-end mt-4">
-              <a href="#" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
-                Coming Soon <ArrowRight className="ml-1 inline h-4 w-4" />
-              </a>
-            </div>
-          </ProjectCard>
+      
         </div>
       </section>
     </Layout>

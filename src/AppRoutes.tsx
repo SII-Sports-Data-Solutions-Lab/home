@@ -1,4 +1,4 @@
-// In src/AppRoutes.tsx
+// src/AppRoutes.tsx
 import { Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Suspense, lazy } from 'react';
@@ -31,15 +31,10 @@ const AppRoutes = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/team" element={<Team />} />
             
-            {/* Project-specific routes */}
-            <Route path="/projects/review-analysis" element={<ProjectDetail projectId="review-analysis" />} />
+            {/* Single project route */}
+            <Route path="/projects/:projectId" element={<ProjectDetail projectId="review-analysis" />} />
             
-            {/* Remove these tab-specific routes since we're combining everything */}
-            {/* <Route path="/projects/review-analysis/overview" element={<ProjectDetail projectId="review-analysis" activeTab="overview" />} />
-            <Route path="/projects/review-analysis/dataset" element={<ProjectDetail projectId="review-analysis" activeTab="dataset" />} />
-            <Route path="/projects/review-analysis/methodology" element={<ProjectDetail projectId="review-analysis" activeTab="methodology" />} /> */}
-            
-            {/* Legacy route support - redirect to main project page */}
+            {/* Legacy routes - redirect to main project page */}
             <Route path="/overview" element={<ProjectDetail projectId="review-analysis" />} />
             <Route path="/dataset" element={<ProjectDetail projectId="review-analysis" />} />
             <Route path="/methodology" element={<ProjectDetail projectId="review-analysis" />} />

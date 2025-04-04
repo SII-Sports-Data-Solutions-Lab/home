@@ -88,7 +88,7 @@ const Index: React.FC = React.memo(() => {
               <div className="lg:w-1/2">
                 <div className="relative rounded-xl overflow-hidden shadow-xl">
                   <img 
-                    src="./assets/hero.png" 
+                    src="/assets/hero.png" 
                     alt="Sports Innovation Institute" 
                     className="w-full h-auto"
                     loading="lazy"
