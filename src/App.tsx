@@ -15,8 +15,6 @@ const queryClient = new QueryClient({
   },
 });
 
-const basePath = import.meta.env.BASE_URL || "/";
-
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ErrorBoundary>
