@@ -21,12 +21,12 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <ErrorBoundary>
       <TooltipProvider>
-        <BrowserRouter>
+        <HashRouter >
           <Toaster />
           <Sonner />
           <AppRoutes />
           <ChatBox /> {/* Add the ChatBox component here */}
-        </BrowserRouter>
+        </HashRouter >
       </TooltipProvider>
     </ErrorBoundary>
   </QueryClientProvider>
