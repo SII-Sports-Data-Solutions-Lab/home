@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sii-sports-data-solutions-lab.github.io/home-website",
+  "homepage": "https://sii-sports-data-solutions-lab.github.io/home",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
