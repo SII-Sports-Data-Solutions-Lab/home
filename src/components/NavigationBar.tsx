@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { getAssetPath } from '@/lib/assetPath';
 
 const NavigationBar: React.FC = () => {
   const location = useLocation();
@@ -44,7 +45,7 @@ const NavigationBar: React.FC = () => {
           className="flex items-center gap-2 text-indiana-crimson hover:opacity-90 transition-opacity"
         >
           <img 
-            src="/assets/ba38ab43-24a4-490d-8d2a-2622669cb079.png"
+            src={getAssetPath("/assets/ba38ab43-24a4-490d-8d2a-2622669cb079.png")}
             alt="SII Logo" 
             className="h-10 w-auto"
           />

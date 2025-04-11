@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import ErrorBoundary from '@/components/ErrorBoundary';
+import { getAssetPath } from '@/lib/assetPath';
 
 // Lazy load components
 const Layout = lazy(() => import('@/components/Layout'));
@@ -93,7 +94,7 @@ const Index: React.FC = React.memo(() => {
           <div className="absolute inset-0 bg-white"></div>
           
           <img 
-            src="/assets/hero.png" 
+            src={getAssetPath("/assets/hero.png")}
             alt="Sports Innovation Institute" 
             className="w-full h-auto relative z-10 mix-blend-normal"
             loading="lazy"
