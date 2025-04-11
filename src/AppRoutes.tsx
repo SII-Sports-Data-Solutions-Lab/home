@@ -1,14 +1,22 @@
-// src/AppRoutes.tsx
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useParams } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Suspense, lazy } from 'react';
 
-// Lazy load all pages
 const Index = lazy(() => import("./pages/Index"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Team = lazy(() => import("./pages/Team"));
-const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+
+const ProjectDetail = () => {
+  const { projectId } = useParams<{ projectId: string }>();
+
+  return (
+    <div>
+      <h1>Project Detail</h1>
+      <p>Project ID: {projectId}</p>
+    </div>
+  );
+};
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -27,18 +35,10 @@ const AppRoutes = () => {
           </div>
         }>
           <Routes location={location}>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/team" element={<Team />} />
-            
-            {/* Single project route */}
-            <Route path="/projects/:projectId" element={<ProjectDetail projectId="review-analysis" />} />
-            
-            {/* Legacy routes - redirect to main project page */}
-            <Route path="/overview" element={<ProjectDetail projectId="review-analysis" />} />
-            <Route path="/dataset" element={<ProjectDetail projectId="review-analysis" />} />
-            <Route path="/methodology" element={<ProjectDetail projectId="review-analysis" />} />
-            
+            <Route path="/home" element={<Index />} />
+            <Route path="/home/projects" element={<Projects />} />
+            <Route path="/home/team" element={<Team />} />
+            <Route path="/home/projects/:projectId" element={<ProjectDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
