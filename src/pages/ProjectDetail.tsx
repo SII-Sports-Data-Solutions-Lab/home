@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
 import { ArrowUpRight } from 'lucide-react';
+import { getAssetPath } from '@/lib/assetPath';
 
 const ProjectDetail: React.FC<{ projectId: string }> = ({ projectId }) => {
   // Get project data based on projectId
@@ -179,44 +180,44 @@ const ProjectDetail: React.FC<{ projectId: string }> = ({ projectId }) => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
               <div className="flex flex-col items-center text-center">
-                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
                   <img 
-                    src="/assets/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png" 
+                    src={getAssetPath("/assets/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png")} 
                     alt="Dr. Liz Ann Wanless" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-indiana-crimson">Dr. Liz Ann Wanless</h3>
                 <p className="text-sm text-gray-600">Director of the Sports Innovation Institute</p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
                   <img 
-                    src="/assets/a57539df-fb1b-4ae4-aaa1-173af06538d4.png" 
+                    src={getAssetPath("/assets/a57539df-fb1b-4ae4-aaa1-173af06538d4.png")} 
                     alt="Aditya Naik" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-indiana-crimson">Aditya Naik</h3>
                 <p className="text-sm text-gray-600">Research Assistant</p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
                   <img 
-                    src="/assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png" 
+                    src={getAssetPath("/assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png")} 
                     alt="Raghuveer Venkatesh" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-indiana-crimson">Raghuveer Venkatesh</h3>
                 <p className="text-sm text-gray-600">Research Assistant</p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
                   <img 
-                    src="/assets/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png" 
+                    src={getAssetPath("/assets/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png")} 
                     alt="Sai Pranam Chillakuru" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-indiana-crimson">Sai Pranam Chillakuru</h3>
