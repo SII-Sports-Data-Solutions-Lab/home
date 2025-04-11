@@ -41,7 +41,7 @@ const Index: React.FC = React.memo(() => {
   // Add error handling for navigation
   const handleNavigation = (path: string) => {
     try {
-      navigate(`/home${path}`);
+      navigate(path);
     } catch (error) {
       console.error('Navigation error:', error);
     }
