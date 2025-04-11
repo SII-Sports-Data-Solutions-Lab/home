@@ -54,52 +54,56 @@ const Index: React.FC = React.memo(() => {
     <Suspense fallback={<div>Loading...</div>}>
       <Layout>
         {/* Hero Section */}
-        <section ref={sectionRef} className={`py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100 ${isVisible ? 'animate-fade-in' : ''}`}>
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-              <div className="lg:w-1/2">
-                <span className="text-sm font-medium text-indiana-crimson uppercase tracking-wider">
-                  IU Indianapolis
-                </span>
-                <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold leading-tight text-gray-900">
-                  Sports Innovation Institute
-                </h1>
-                <p className="mt-6 text-xl text-gray-700 leading-relaxed">
-                  <span className="font-semibold">We blend academic thinking with an entrepreneurial spirit</span> to create, discover, and promote unique products, services, and game-day experiences.
-                </p>
-                <p className="mt-4 text-lg text-gray-700">
-                  Our passion is rivaled only by our drive to inspire the next great business or sports-related idea that goes well beyond the game.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-4">
-                  <Button 
-                    onClick={() => handleNavigation('/projects')}
-                    className="bg-indiana-crimson hover:bg-indiana-red text-white px-6 py-3 text-lg"
-                  >
-                    Explore Our Projects
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                  <Link to="/team">
-                    <Button variant="outline" className="border-indiana-crimson text-indiana-crimson hover:bg-indiana-crimson/10 px-6 py-3 text-lg">
-                      Meet Our Team
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="lg:w-1/2">
-                <div className="relative rounded-xl overflow-hidden shadow-xl">
-                  <img 
-                    src="/assets/hero.png" 
-                    alt="Sports Innovation Institute" 
-                    className="w-full h-auto"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div className="absolute inset-0 bg-indiana-crimson/20 rounded-xl"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section ref={sectionRef} className={`pt-0 pb-16 md:pt-0 md:pb-20 bg-white ${isVisible ? 'animate-fade-in' : ''}`}>
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col lg:flex-row items-center gap-12 relative">
+      <div className="lg:w-1/2 z-10">
+        <span className="text-sm font-medium text-indiana-crimson uppercase tracking-wider">
+          IU Indianapolis
+        </span>
+        <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold leading-tight text-gray-900">
+          Sports Innovation Institute
+        </h1>
+        <p className="mt-6 text-xl text-gray-700 leading-relaxed">
+          <span className="font-semibold">We blend academic thinking with an entrepreneurial spirit</span> to create, discover, and promote unique products, services, and game-day experiences.
+        </p>
+        <p className="mt-4 text-lg text-gray-700">
+          Our passion is rivaled only by our drive to inspire the next great business or sports-related idea that goes well beyond the game.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Button 
+            onClick={() => handleNavigation('/projects')}
+            className="bg-indiana-crimson hover:bg-indiana-red text-white px-6 py-3 text-lg"
+          >
+            Explore Our Projects
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <Link to="/team">
+            <Button variant="outline" className="border-indiana-crimson text-indiana-crimson hover:bg-indiana-crimson/10 px-6 py-3 text-lg">
+              Meet Our Team
+            </Button>
+          </Link>
+        </div>
+      </div>
+      
+      {/* Image container with 10% right shift */}
+      <div className="lg:w-1/2 lg:translate-x-[10%] relative">
+        <div className="relative rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02]">
+          {/* White background and mask to blend the image */}
+          <div className="absolute inset-0 bg-white"></div>
+          
+          <img 
+            src="/assets/hero.png" 
+            alt="Sports Innovation Institute" 
+            className="w-full h-auto relative z-10 mix-blend-normal"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Mission & Impact Section */}
         <section className="py-16 bg-white">
