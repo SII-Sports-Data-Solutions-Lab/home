@@ -1,5 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { getAssetPath } from '@/lib/assetPath';
 
 interface TeamMemberProps {
   name: string;
@@ -42,22 +43,22 @@ const TeamCard: React.FC<TeamCardProps> = ({ className }) => {
     {
       name: "Aditya Naik",
       role: "Research Assistant",
-      imageUrl: "/assets/a57539df-fb1b-4ae4-aaa1-173af06538d4.png"
+      imageUrl: getAssetPath("/assets/a57539df-fb1b-4ae4-aaa1-173af06538d4.png")
     },
     {
       name: "Raghuveer Venkatesh",
       role: "Research Assistant",
-      imageUrl: "/assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png"
+      imageUrl: getAssetPath("/assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png")
     },
     {
       name: "Sai Pranam Chillakuru",
       role: "Research Assistant",
-      imageUrl: "/assets/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png"
+      imageUrl: getAssetPath("/assets/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png")
     },
     {
       name: "Dr. Liz Ann Wanless",
       role: "Director of the Sports Innovation Institute",
-      imageUrl: "/assets/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png"
+      imageUrl: getAssetPath("/assets/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png")
     }
   ];
 
