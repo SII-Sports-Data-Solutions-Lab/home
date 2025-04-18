@@ -8,6 +8,7 @@ const Index = lazy(() => import("./pages/Index"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Team = lazy(() => import("./pages/Team"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
+const StrikerWorthDetail = lazy(() => import("./pages/StrikerWorthDetail"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const AppRoutes = () => {
@@ -33,6 +34,7 @@ const AppRoutes = () => {
             
             {/* Single project route */}
             <Route path="/projects/:projectId" element={<ProjectDetail projectId="review-analysis" />} />
+            <Route path="/projects/striker-worth" element={<StrikerWorthDetail />} />
             
             {/* Legacy routes - redirect to main project page */}
             <Route path="/overview" element={<ProjectDetail projectId="review-analysis" />} />

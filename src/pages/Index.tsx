@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import { getAssetPath } from '@/lib/assetPath';
+import ProjectCard from '@/components/ProjectCard';
 
 // Lazy load components
 const Layout = lazy(() => import('@/components/Layout'));
@@ -242,6 +243,35 @@ const Index: React.FC = React.memo(() => {
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* New Projects Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
+              <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-indiana-crimson">
+                New & Featured Projects
+              </h2>
+              <div className="mt-2 h-1 w-20 bg-indiana-crimson mx-auto"></div>
+              <p className="mt-4 text-lg text-gray-700">
+                Explore our latest research and innovation initiatives.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <ProjectCard title="Review Analysis Dashboard" animationDelay="delay-100">
+                <p>A comprehensive analysis of customer reviews for digital fitness equipment, using natural language processing and machine learning techniques to uncover patterns and insights.</p>
+                <Link to="/projects/review-analysis" className="inline-block mt-4 text-indiana-crimson hover:underline font-medium">Learn More <ArrowRight className="ml-1 inline h-4 w-4" /></Link>
+              </ProjectCard>
+              <ProjectCard title="What’s A Striker Worth?" animationDelay="delay-200">
+                <p>A smart, data-driven tool that predicts a striker’s market value by analyzing their stats, performance, and physical traits—giving clubs, scouts, and managers the insights they need to spot hidden gems and back big investments.</p>
+                <Link to="/projects/striker-worth" className="inline-block mt-4 text-indiana-crimson hover:underline font-medium">Learn More <ArrowRight className="ml-1 inline h-4 w-4" /></Link>
+              </ProjectCard>
+              <ProjectCard title="NFL Big Data Bowl GuideBook" animationDelay="delay-300">
+                <p>A guidebook for NFL enthusiasts and analysts, detailing the methodologies and insights from the NFL Big Data Bowl. This project focuses on enhancing understanding of player performance metrics and game strategies through data visualization and analysis.</p>
+                <span className="inline-block mt-4 text-gray-400 font-medium">Coming Soon</span>
+              </ProjectCard>
             </div>
           </div>
         </section>

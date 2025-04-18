@@ -35,6 +35,20 @@ const Projects: React.FC = () => {
               </Link>
             </div>
           </ProjectCard>
+
+          <ProjectCard 
+            title="What’s A Striker Worth?" 
+            animationDelay="delay-200"
+          >
+            <p className="mb-4">
+              A smart, data-driven tool that predicts a striker’s market value by analyzing their stats, performance, and physical traits—giving clubs, scouts, and managers the insights they need to spot hidden gems, back big investments, and stay ahead in the game.
+            </p>
+            <div className="flex justify-end mt-4">
+              <Link to="/projects/striker-worth" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
+                View Project <ArrowRight className="ml-1 inline h-4 w-4" />
+              </Link>
+            </div>
+          </ProjectCard>
           
           <ProjectCard 
             title="NFL Big Data Bowl GuideBook" 
