@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { X, Send, MessageSquare, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import DOMPurify from 'dompurify'; // Install this package for security
+import axios from 'axios'; // Import axios for API requests
 
 // Define message types
 interface Message {
@@ -55,9 +56,9 @@ const ChatBox: React.FC = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (inputValue.trim() === '') return;
-    
+
     // Add user message
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -66,25 +67,37 @@ const ChatBox: React.FC = () => {
       sender: 'user',
       timestamp: new Date()
     };
-    
+
     setMessages(prev => [...prev, userMessage]);
     setInputValue('');
-    
-    // Simulate typing delay
-    setTimeout(() => {
-      // Generate response based on input
-      const response = generateResponse(inputValue);
-      
+
+    try {
+      // Send the question to the new endpoint using form-data
+      const formData = new FormData();
+      formData.append('question', inputValue);
+
+      const response = await axios.post('https://raghuveervenkatesh.us/api/chat-sii', formData);
+
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        content: response.content,
-        isHtml: response.isHtml,
+        content: response.data.answer || 'Sorry, I could not process your question.',
+        isHtml: false,
         sender: 'bot',
         timestamp: new Date()
       };
-      
+
       setMessages(prev => [...prev, botMessage]);
-    }, 800);
+    } catch (error) {
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        content: 'An error occurred while processing your request. Please try again later.',
+        isHtml: false,
+        sender: 'bot',
+        timestamp: new Date()
+      };
+
+      setMessages(prev => [...prev, errorMessage]);
+    }
   };
 
   const generateResponse = (input: string): { content: string, isHtml: boolean } => {

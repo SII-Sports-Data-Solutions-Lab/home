@@ -1,0 +1,307 @@
+{
+    "title": "IU Indianapolis Sports Innovation Institute (SII) Knowledge for LLM RAG",
+    "main_site_structure": {
+      "homepage": "Overview of SII’s mission to blend academic and entrepreneurial approaches to sports innovation.",
+      "global_navigation": [
+        "About",
+        "Archive",
+        "Research",
+        "Student Engagement",
+        "Prospective Students",
+        "Podcast",
+        "Journal",
+        "Data Links"
+      ]
+    },
+    "about": {
+      "mission_history": "Collaborative hub leveraging student/faculty expertise to solve sports-industry problems.",
+      "why_sports_why_indianapolis": {
+        "north_american_market_2023": "$83 billion",
+        "indy_annual_revenue": "$3.4 billion"
+      },
+      "leadership": {
+        "liz_wanless": {
+          "title": "Institute Director",
+          "partnerships": ["Colts", "Indians", "NCAA", "Beyond Monumental", "etc."]
+        },
+        "geoffre_sherman": {
+          "title": "Project & Communications Manager",
+          "experience": "Decade of professional experience"
+        }
+      },
+      "academic_partners": [
+        "Herron School of Art and Design",
+        "Kelley School of Business",
+        "Robert H. McKinney School of Law",
+        "School of Education",
+        "School of Health & Human Sciences",
+        "Luddy School of Informatics, Computing, & Engineering",
+        "School of Liberal Arts",
+        "O'Neill School of Public & Environmental Affairs"
+      ]
+    },
+    "archive": {
+      "description": "Video-transcript case studies showcasing SII engagements with Grand Park, youth-sports reopening surveys, sales projects, design-thinking capstones, and more.",
+      "content_details": "These transcripts include stakeholder quotes (e.g., Dr. Pierce, William Knox) and detailed findings from surveys of 10,000+ respondents."
+    },
+    "research": {
+      "overview": {
+        "description": "“Finding real solutions for industry challenges” through design thinking, data analytics, and student engagement.",
+        "graduate_placement": "60% of grads work in sports, 80% stay in central Indiana."
+      },
+      "student_projects": {
+        "description": "Links to blog categories for Sports Analytics Projects, Student Experiences, Senior Capstone Projects, and Graduate Student Projects."
+      },
+      "research_reports": [
+        {
+          "title": "NEXTGEN Indy Reports",
+          "years": ["2024", "2023"],
+          "focus": "Gen Z perceptions study for tourism leaders"
+        },
+        {
+          "title": "2022 CFP Economic Impact",
+          "collaboration": "Rockport Analytics"
+        },
+        {
+          "title": "2021 & 2020 Youth Sports Studies",
+          "focus": "COVID-19 return adaptations survey with Grand Park"
+        },
+        {
+          "title": "2019 Rahal Letterman Lanigan Racing analysis",
+          "focus": "Social-media video performance"
+        },
+        {
+          "title": "Indy Sports Poll and Sports Jobs Reports",
+          "features": "Interactive Tableau visualizations"
+        }
+      ],
+      "consulting_projects": {
+        "description": "Data-driven analyses for major partners:",
+        "examples": [
+          "U.S. & Canada Sports Jobs",
+          "Racing & Social Media Strategy",
+          "Big Ten Social Media",
+          "Over a dozen client case studies (e.g., Colts, Incrediplex, USA Diving)"
+        ]
+      }
+    },
+    "student_engagement": {
+      "curriculum_innovation": {
+        "description": "Four-course design-thinking sequence (First-Year Seminar, Introductory Course, Management Principles, Capstone).",
+        "features": "Published case studies and high-impact practices."
+      },
+      "innovation_sprints": [
+        {
+          "year": "2023",
+          "partner": "IU Athletics",
+          "type": "24-hour design sprint"
+        },
+        {
+          "year": "2022",
+          "partner": "Monon | 30",
+          "type": "24-hour design sprint"
+        },
+        {
+          "year": "2020",
+          "partner": "NCAA March Madness",
+          "type": "24-hour design sprint"
+        },
+        {
+          "year": "2019",
+          "partner": "Fair Oaks Farms",
+          "type": "24-hour design sprint"
+        }
+      ],
+      "speaker_series": "Campus talks by TechStars Indy, Dr. Dave Schrader, Dr. Scott Nestler, Matt Duncan, Jeremy Hochstedler, etc., covering entrepreneurship and analytics.",
+      "shhs_studio": {
+        "description": "Audio/video production studio—podcasting equipment and backdrops—supporting student content.",
+        "example": "GameTime Gals Podcast (Spring 2024)"
+      }
+    },
+    "prospective_students": {
+      "winning_careers": {
+        "job_placement_rate": "Tripled post-grad job placement rates (2013–2018).",
+        "success_stories": ["Christina Ferguson", "Valeriia Lavrenchuk"]
+      },
+      "classroom_experiences": "Career/self-assessments, field experiences, sports sales training, human-centered capstone, 400-hour internship requirement, club activities.",
+      "activities_events": "Annual innovation sprints, speaker series recaps, Sports Management Club volunteering at mega-events."
+    },
+    "data_links": {
+      "description": "Curated data dashboards for U.S. & Canada Sports Jobs, IndyCar video analytics, Big Ten social-media performance.",
+      "license": "Creative Commons license"
+    },
+    "sports_innovation_journal": {
+      "description": "Open-access scholarly journal focused on practitioner-oriented research.",
+      "mission": "To create an ongoing culture of collaboration between researchers and practitioners in every aspect of the sports industry, focusing on research that informs the development of innovative ideas.",
+      "scope": ["Data Analytics", "Design", "Sports Science", "etc."],
+      "editorial_board": "Composed of researchers and practitioners in various disciplines within college and professional sports.",
+      "author_submission_guidelines": {
+        "problem_background_methods_results_implications": "Manuscript must clearly indicate the problem, provide background, describe methods, explain results, and describe implications for the sports industry.",
+        "no_prior_publication": "Submission has not been previously published nor is under consideration elsewhere.",
+        "format": "Single-spaced Microsoft Word document, 12-point font, italics for emphasis (except URLs), illustrations/figures/tables within the text.",
+        "data_availability": "If applicable, data can be made available in Tableau.",
+        "abstract_keywords": "Abstract between 150-200 words, manuscript less than 4,000 words, includes relevant keywords.",
+        "apa_style": "Text adheres to the latest edition of the “Publication Manual of the American Psychological Association.”"
+      },
+      "infographics": "The Sports Innovation Institute will supply infographic material for approved submissions.",
+      "podcast_tie_ins": "Podcast episodes often feature discussions related to journal articles."
+    },
+    "podcast": {
+      "description": "The Sports Innovation Podcast episodes featuring Dr. Liz Wanless, engaged-learning special issues, youth sports transformation, industry accelerator insights, NFTs in sports, and more.",
+      "details": "Pagination and category filters available on IU Blogs.",
+      "episodes": [
+        {
+          "title": "Introducing the SII Director, Dr. Liz Wanless",
+          "date": "12/17/2024"
+        },
+        {
+          "title": "Special Issue on Engaged Learning",
+          "date": "12/28/2023"
+        },
+        {
+          "title": "Elevating Communities Through Youth Sports with the Center for Sports Transformation",
+          "date": "07/24/2023"
+        },
+        {
+          "title": "Dr. James Johnson & Dr. David Pierce",
+          "date": "06/07/2023"
+        },
+        {
+          "title": "Dr. Tim Koba",
+          "date": "04/12/2023"
+        },
+        {
+          "title": "Understanding the Esports Landscape with Chris Scroggins",
+          "date": "07/06/2022"
+        },
+        {
+          "title": "NFTs in Sports with Dr. Bradley Baker",
+          "date": "03/22/2022"
+        },
+        {
+          "title": "Co-Founders of Upper Hand",
+          "date": "05/18/2021"
+        },
+        {
+          "title": "Inside The Techstars Sports Accelerator Powered by Indy",
+          "date": "04/23/2021"
+        },
+        {
+          "title": "RefReps and the Shortage of Referees",
+          "date": "02/15/2021"
+        },
+        {
+          "title": "NCAA March Madness 2021 and Indianapolis",
+          "date": "02/08/2021"
+        },
+        {
+          "title": "Armin A. Marquez, Ph.D.",
+          "date": "12/08/2020"
+        },
+        {
+          "title": "Chad Goebert",
+          "date": "11/09/2020"
+        },
+        {
+          "title": "Nick Elam",
+          "date": "10/08/2020"
+        },
+        {
+          "title": "Heather Lawrence",
+          "date": "07/22/2020"
+        },
+        {
+          "title": "David Pierce",
+          "date": "06/03/2020"
+        },
+        {
+          "title": "Brendan O’Hallarn and James Strode",
+          "date": "05/30/2020"
+        },
+        {
+          "title": "Michael Naraine and Liz Wanless",
+          "date": "05/30/2020"
+        },
+        {
+          "title": "Sarah Stokowski, Amanda Paule-Koba and Alex Auerbach",
+          "date": "05/28/2020"
+        },
+        {
+          "title": "Chris Chard and Daniel Wigfield",
+          "date": "05/19/2020"
+        },
+        {
+          "title": "Nick Elam",
+          "date": "03/02/2020"
+        },
+        {
+          "title": "Cheri Bradish",
+          "date": "11/26/2019"
+        },
+        {
+          "title": "Dave Schrader",
+          "date": "11/07/2019"
+        },
+        {
+          "title": "Adam White and Russ Wilde",
+          "date": "10/07/2019"
+        },
+        {
+          "title": "Galen Clavio",
+          "date": "09/18/2019"
+        },
+        {
+          "title": "Brendan Szulik",
+          "date": "09/18/2019"
+        }
+      ]
+    },
+    "companion_blog": {
+      "url": "iuindysii",
+      "navigation": ["Blog Home", "Our Experts", "In the News", "Collaborations", "Work Archive", "YouTube", "Web Home"],
+      "recent_posts": "Titles, dates, authors, categories (e.g., Student Experiences, Faculty Perspectives, Sports Analytics), tags, and excerpts for RAG metadata.",
+      "categories_archives": {
+        "category_tags": ["14 category tags"],
+        "archives": "Month-by-month archives from Feb 2025 back to Apr 2017"
+      }
+    },
+    "sii_work_archive": [
+      "Innovation Sprint a Win for Students and NCAA, Indiana Sports Corp (April 30, 2020)",
+      "IUPUI grad student crunches numbers on winning sports analytics team (April 7, 2020)",
+      "Jaguars Get Real-world Experience Hosting Horizon League Basketball Tournaments (March 4, 2020)",
+      "Sport Industry Clients Wowed by Grad Student Consulting (August 29, 2019)",
+      "IUPUI Students Pilot Real-time Social Media Response during Indy Mega Events (August 1, 2019)",
+      "This Is May: Social Strategy Drives Marketing Results (May 8, 2019)",
+      "Indy: Nation’s Next Sports Tech Capital? (April 18, 2019)",
+      "Indy Winner’s Circle: IUPUI Sports Management Students Take Home Top Prize (April 2, 2019)",
+      "Sports Gambling: A Sure Bet for Indiana Entrepreneurs? (August 22, 2018)",
+      "Central Indiana parents invest time, treasure in youth sport opportunities for kids (May 31, 2018)",
+      "Gamer’s Hall hosts League of Legends Tournament Championship (April 30, 2018)",
+      "eSports Growth and Future at IUPUI and Indy Event Recap (April 16, 2018)",
+      "Immersive sales class closes another banner year with Indians (April 6, 2018)",
+      "Central Indiana sports fans love their minor league sports teams (March 29, 2018)",
+      "SportsUNITED Organizes Live ESports Event and Panel (March 14, 2018)",
+      "Jeremy Hochstedler, founder of Diamond Charts and Telemetry Sports, Opens the SII Speaker Series (March 7, 2018)",
+      "Profile of the Indy Sports Fan: How Indy Sports Fans Get Their Sports News (February 26, 2018)",
+      "IUPUI hosting League of Legends esports high school event with $10,000 in scholarships on the line (February 15, 2018)",
+      "Generational Differences in Feelings about Sports Leagues (January 4, 2018)",
+      "David Pierce brings latest trends, opportunities to IUPUI sport marketing students (October 1, 2017)",
+      "Survey reveals Central Indiana sports loyalties (September 8, 2017)",
+      "Dr. Jay Gladden Speaks on Sport Innovation at the Smithsonian (September 8, 2017)",
+      "24-Hour Challenge Team Finishes Second in Jag Start competition (March 15, 2017)",
+      "IU researchers offer new insights into how communities can tap into youth sports tourism (March 1, 2017)"
+    ],
+    "additional_sources": [
+      "https://sii.indianapolis.iu.edu/index.html",
+      "https://blogs.iu.edu/iuindysii/"
+    
+    ],
+    "contact_info": {
+      "email": "info@sii.indiana.edu",
+      "phone": "317-555-0199"
+    },
+    "metadata": {
+      "source": "https://sii.indianapolis.iu.edu/index.html",
+      "date": "2024-12-17"
+    }
+  }

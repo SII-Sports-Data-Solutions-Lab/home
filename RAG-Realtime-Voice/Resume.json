@@ -1,0 +1,131 @@
+{
+    "name": "Raghuveer Venkatesh",
+    "contact": {
+      "phone": "(317)-417-8807",
+      "email": "raghuveervenkatesh7@gmail.com",
+      "location": "Indianapolis, Indiana"
+    },
+    "profiles": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "website": "Website"
+    },
+    "education": [
+      {
+        "institution": "Indiana University Indianapolis",
+        "location": "Indianapolis, U.S.",
+        "degree": "Master of Science, Applied Data Science",
+        "gpa": "4.00/4.00",
+        "expected_completion": "Dec 2025",
+        "relevant_coursework": [
+          "Python programming",
+          "Statistics in R",
+          "Database Design"
+        ]
+      },
+      {
+        "institution": "CMR Institute of Technology Bangalore",
+        "location": "Bangalore, India",
+        "degree": "Bachelor of Engineering, Electronics and Computer Engineering",
+        "graduation_date": "Jan 2018"
+      }
+    ],
+    "skills": {
+      "programming_languages": [
+        "Python",
+        "SQL",
+        "R",
+        "PowerShell",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "C#"
+      ],
+      "tools_and_platforms": [
+        "Azure DevOps",
+        "Docker",
+        "Git",
+        "Visual Studio",
+        "Power BI",
+        "PowerApps",
+        "SharePoint",
+        "Azure Data Factory",
+        "Linux"
+      ],
+      "core_competencies": [
+        "ETL",
+        "Automation",
+        "Database Management",
+        "Azure Cloud Services",
+        "Web Development",
+        "Parallel Programming",
+        "IT Project Management",
+        "Data Visualization",
+        "REST APIs",
+        "Pandas",
+        "PySpark"
+      ]
+    },
+    "professional_experience": [
+      {
+        "company": "Eurofins IT",
+        "location": "Bangalore, India",
+        "role": "Senior Software Engineer – Data Automation",
+        "start_date": "July 2022",
+        "end_date": "August 2024",
+        "achievements": [
+          "Designed and implemented a scalable data pipeline to collect, transform, and load tenant data from 38 Azure tenants into a centralized repository using Python, Azure Data Factory, and Power BI.",
+          "Led a team of six engineers as Scrum Master to migrate SharePoint data across multiple countries, implementing best practices for data validation, monitoring, and reporting; delivered ahead of schedule.",
+          "Developed a PowerApps-based app integrated with SQL Stored Procedures for internal data tracking across 146 office locations, reducing manual input and improving data consistency.",
+          "Created a data pipeline to automate migration of 6TB of unstructured data from on-premises SharePoint servers to Azure Blob Storage and SharePoint Online, ensuring seamless flow and scalability.",
+          "Built data ingestion and processing pipelines for Microsoft 365 activity logs, decreasing audit time by 70% by automating data validation, transformation, and loading processes."
+        ]
+      },
+      {
+        "company": "Eurofins IT",
+        "location": "Bangalore, India",
+        "role": "Software Engineer",
+        "start_date": "June 2018",
+        "end_date": "June 2022",
+        "achievements": [
+          "Created and deployed scheduled jobs using Azure DevOps to consolidate application logs from 18 servers across 3 environments into a unified database for further processing.",
+          "Developed a travel request portal that reduced processing time from 10 days to 3 days and provided real-time historical data via Power BI.",
+          "Built a web app to manage dynamic email distribution lists (1,600 entries) and automated data loading into SharePoint using C# for 60,000+ users."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Sentiment Analysis Pipeline",
+        "description": "Engineered a Python-based pipeline that scraped Amazon & Peloton reviews using BeautifulSoup and PySpark, ingested data into PostgreSQL, and delivered interactive insights via a Streamlit dashboard.",
+        "link": "https://github.com/raghuveer9303/Web-Scraper"
+      },
+      {
+        "name": "FIFA Striker Market Value Predictor",
+        "description": "Developed a regression model leveraging player performance, physical attributes, and stats to forecast football strikers' market value, empowering smarter scouting and investment decisions.",
+        "link": "https://rpubs.com/Raghuveer_Venkatesh/1255695"
+      }
+    ],
+    "certifications": [
+      "Microsoft AZ-900: Azure Fundamentals",
+      "Scrum Alliance Certified ScrumMaster (CSM®)",
+      "Kaggle Python Certificate",
+      "Kaggle Pandas Certificate",
+      "HackerRank Python 4★ Badge",
+      "HackerRank SQL 2★ Badge",
+      {
+        "name": "IBM Certified Data Engineer Professional",
+        "sub_certifications": [
+          "Introduction to Data Engineering",
+          "Python Project for Data Engineering",
+          "Linux Commands and Shell Scripting"
+        ]
+      }
+    ],
+    "awards": [
+      "Eurofins Star Performer Award – Q3 2019",
+      "Eurofins Star Performer Award – Q3 2021",
+      "Eurofins Star Performer Award – Q1 2023"
+    ]
+  }
+  
