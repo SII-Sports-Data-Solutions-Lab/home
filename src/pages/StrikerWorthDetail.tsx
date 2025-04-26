@@ -143,7 +143,7 @@ const StrikerWorthDetail: React.FC = () => {
               <div className="flex flex-col items-center text-center">
                 <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
                   <img 
-                    src={getAssetPath("/assets/a57539df-fb1b-4ae4-aaa1-173af06538d4.png")} 
+                    src={getAssetPath("/assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png")} 
                     alt="Raghuveer Venkatesh" 
                     className="w-full h-full object-cover object-center"
                   />
