@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '@/components/Layout';
 import { getAssetPath } from '@/lib/assetPath';
 
 const PDF_URL_2 = getAssetPath("/assets/NFLBigDataBowlGuidebook.pdf");
 
 const NFLBigDataBowlGuidebook: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <section className="py-12 md:py-16">
@@ -48,12 +52,12 @@ const NFLBigDataBowlGuidebook: React.FC = () => {
             <div className="flex flex-col items-center text-center">
               <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
                 <img 
-                  src={getAssetPath("/assets/ba38ab43-24a4-490d-8d2a-2622669cb079.png")}
-                  alt="Sai Pranam" 
+                  src={getAssetPath("/assets/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png")}
+                  alt="Sai Pranam Chillakuru" 
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-indiana-crimson">Sai Pranam</h3>
+              <h3 className="text-lg font-semibold text-indiana-crimson">Sai Pranam Chillakuru</h3>
               <p className="text-sm text-gray-600">Research Assistant</p>
             </div>
             <div className="flex flex-col items-center text-center">

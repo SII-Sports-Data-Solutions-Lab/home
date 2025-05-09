@@ -1,10 +1,13 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '@/components/Layout';
 import TeamCard from '@/components/TeamCard';
 import ProjectCard from '@/components/ProjectCard';
 
 const Team: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <section className="py-12 md:py-16">

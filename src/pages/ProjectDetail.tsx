@@ -1,11 +1,15 @@
 // src/pages/ProjectDetail.tsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
 import { ArrowUpRight } from 'lucide-react';
 import { getAssetPath } from '@/lib/assetPath';
 
 const ProjectDetail: React.FC<{ projectId: string }> = ({ projectId }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Get project data based on projectId
   const projectData = {
     'review-analysis': {

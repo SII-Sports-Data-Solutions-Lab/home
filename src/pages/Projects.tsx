@@ -1,11 +1,15 @@
 // src/pages/Projects.tsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const Projects: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <section className="py-12 md:py-16">

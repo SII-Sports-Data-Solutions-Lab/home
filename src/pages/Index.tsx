@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -12,6 +12,10 @@ const Layout = lazy(() => import('@/components/Layout'));
 // Add memo to prevent unnecessary re-renders
 const Index: React.FC = React.memo(() => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Add intersection observer for animations
   const [isVisible, setIsVisible] = React.useState(false);
