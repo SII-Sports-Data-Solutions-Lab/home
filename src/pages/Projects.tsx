@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
 
         <div className="space-y-10 max-w-4xl mx-auto">
           <ProjectCard 
-            title="Review Analysis Dashboard" 
+            title="What Stories Do Your Reviews Tell?" 
             animationDelay="delay-100"
           >
             <p className="mb-4">
@@ -58,12 +58,42 @@ const Projects: React.FC = () => {
               A guidebook for NFL enthusiasts and analysts, detailing the methodologies and insights from the NFL Big Data Bowl. This project focuses on enhancing understanding of player performance metrics and game strategies through data visualization and analysis.
             </p>
             <div className="flex justify-end mt-4">
-              <a href="#" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
-                Coming Soon <ArrowRight className="ml-1 inline h-4 w-4" />
-              </a>
+              <Link to="/projects/nfl-big-data-bowl-guidebook" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
+                View GuideBook <ArrowRight className="ml-1 inline h-4 w-4" />
+              </Link>
             </div>
           </ProjectCard>
 
+          <ProjectCard
+            title="Unified Review Collection Framework"
+            animationDelay="delay-300"
+          >
+            <p className="mb-4">
+              An open-source framework for collecting and analyzing product reviews from major fitness equipment retailers. Features modular scrapers and PostgreSQL integration.
+            </p>
+            <div className="flex justify-end mt-4">
+              <Link to="/projects/unified-review-framework" className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors">
+                View Project <ArrowRight className="ml-1 inline h-4 w-4" />
+              </Link>
+            </div>
+          </ProjectCard>
+
+          <ProjectCard
+            title="Mining the LinkedIn Goldmine: Data Extraction Demystified"
+            animationDelay="delay-400"
+          >
+            <p className="mb-4">
+              This project explores multiple methods for extracting LinkedIn profile data, including official APIs, web scraping, and third-party tools. It highlights the pros, cons, and ethical considerations of each approach using a detailed Google Slides presentation.
+            </p>
+            <div className="flex justify-end mt-4">
+              <Link
+                to="/projects/linkedin-profile-data-methods"
+                className="px-4 py-2 bg-indiana-crimson text-white rounded-md hover:bg-indiana-red transition-colors"
+              >
+                View Project <ArrowRight className="ml-1 inline h-4 w-4" />
+              </Link>
+            </div>
+          </ProjectCard>
         </div>
       </section>
     </Layout>

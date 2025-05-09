@@ -260,7 +260,7 @@ const Index: React.FC = React.memo(() => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <ProjectCard title="Review Analysis Dashboard" animationDelay="delay-100">
+              <ProjectCard title="What Stories Do Your Reviews Tell?" animationDelay="delay-100">
                 <p>A comprehensive analysis of customer reviews for digital fitness equipment, using natural language processing and machine learning techniques to uncover patterns and insights.</p>
                 <Link to="/projects/review-analysis" className="inline-block mt-4 text-indiana-crimson hover:underline font-medium">Learn More <ArrowRight className="ml-1 inline h-4 w-4" /></Link>
               </ProjectCard>

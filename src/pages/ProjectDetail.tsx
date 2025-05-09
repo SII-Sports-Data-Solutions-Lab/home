@@ -9,7 +9,7 @@ const ProjectDetail: React.FC<{ projectId: string }> = ({ projectId }) => {
   // Get project data based on projectId
   const projectData = {
     'review-analysis': {
-      title: "Review Analysis Dashboard",
+      title: "What Stories Do Your Reviews Tell?",
       description: "A comprehensive analysis of customer reviews for digital fitness equipment, using natural language processing and machine learning techniques to uncover patterns and insights."
     }
   }[projectId] || {
