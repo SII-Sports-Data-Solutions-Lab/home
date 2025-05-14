@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
 import TeamCard from '@/components/TeamCard';
 import { ArrowUpRight } from 'lucide-react';
+import { getAssetPath } from '@/lib/assetPath';
 
 const LinkedinProfileDataMethods: React.FC = () => {
   useEffect(() => {
@@ -50,7 +51,7 @@ const LinkedinProfileDataMethods: React.FC = () => {
           <ProjectCard title="Ways to get LinkedIn Profile Data (PDF)" animationDelay="delay-150">
             <div className="w-full h-[700px] border rounded-md overflow-hidden">
               <iframe
-                src="/Ways%20to%20get%20LinkedIn%20Profile%20Data.pdf"
+                src="assets/Ways%20to%20get%20LinkedIn%20Profile%20Data.pdf"
                 title="Ways to get LinkedIn Profile Data PDF"
                 width="100%"
                 height="100%"
@@ -60,8 +61,58 @@ const LinkedinProfileDataMethods: React.FC = () => {
             </div>
           </ProjectCard>
 
-          <ProjectCard title="Team" animationDelay="delay-200">
-            <TeamCard />
+          {/* Team Section */}
+          <ProjectCard 
+            title="Research Team" 
+            animationDelay="delay-400"
+          >
+          
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+              <div className="flex flex-col items-center text-center">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
+                  <img 
+                    src={getAssetPath("/assets/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png")} 
+                    alt="Dr. Liz Ann Wanless" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-indiana-crimson">Dr. Liz Ann Wanless</h3>
+                <p className="text-sm text-gray-600">Director of the Sports Innovation Institute</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
+                  <img 
+                    src={getAssetPath("/assets/a57539df-fb1b-4ae4-aaa1-173af06538d4.png")} 
+                    alt="Aditya Naik" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-indiana-crimson">Aditya Naik</h3>
+                <p className="text-sm text-gray-600">Research Assistant</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
+                  <img 
+                    src={getAssetPath("/assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png")} 
+                    alt="Raghuveer Venkatesh" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-indiana-crimson">Raghuveer Venkatesh</h3>
+                <p className="text-sm text-gray-600">Research Assistant</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
+                  <img 
+                    src={getAssetPath("/assets/59fb4cec-1adf-46f3-8726-207a7b1f03b4.png")} 
+                    alt="Sai Pranam Chillakuru" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-indiana-crimson">Sai Pranam Chillakuru</h3>
+                <p className="text-sm text-gray-600">Research Assistant</p>
+              </div>
+            </div>
           </ProjectCard>
         </div>
       </section>
