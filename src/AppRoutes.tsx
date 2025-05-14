@@ -6,7 +6,6 @@ import { Suspense, lazy } from 'react';
 // Lazy load all pages
 const Index = lazy(() => import("./pages/Index"));
 const Projects = lazy(() => import("./pages/Projects"));
-const Team = lazy(() => import("./pages/Team"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const StrikerWorthDetail = lazy(() => import("./pages/StrikerWorthDetail"));
 const NFLBigDataBowlGuidebook = lazy(() => import("./pages/NFLBigDataBowlGuidebook"));
@@ -33,7 +32,6 @@ const AppRoutes = () => {
           <Routes location={location}>
             <Route path="/" element={<Index />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/team" element={<Team />} />
             
             {/* Single project route */}
             <Route path="/projects/:projectId" element={<ProjectDetail projectId="review-analysis" />} />

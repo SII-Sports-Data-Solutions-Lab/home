@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
 import TeamCard from '@/components/TeamCard';
 import { ArrowUpRight } from 'lucide-react';
+import { getAssetPath } from '@/lib/assetPath';
 
 const UnifiedReviewFramework: React.FC = () => {
   useEffect(() => {
@@ -33,7 +34,7 @@ const UnifiedReviewFramework: React.FC = () => {
           </a>
         </div>
 
-        <div className="space-y-10 max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-8">
           <ProjectCard title="Project Overview" animationDelay="delay-100">
             <p className="mb-4">
               The Unified Review Collection Framework is designed to streamline the process of collecting, storing, and analyzing product reviews from a wide range of e-commerce and fitness equipment platforms. It supports automated scraping, robust error handling, and seamless integration with PostgreSQL databases for scalable data storage and analysis.
@@ -48,8 +49,32 @@ const UnifiedReviewFramework: React.FC = () => {
             </ul>
           </ProjectCard>
 
-          <ProjectCard title="Team" animationDelay="delay-200">
-            <TeamCard />
+          {/* Team - styled like ProjectDetail */}
+          <ProjectCard title="Team" animationDelay="delay-600">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+              <div className="flex flex-col items-center text-center">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
+                  <img 
+                    src={getAssetPath("/assets/b5866e1b-57bc-42f2-8b40-b20ef8adec6b.png")} 
+                    alt="Dr. Liz Ann Wanless" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-indiana-crimson">Dr. Liz Ann Wanless</h3>
+                <p className="text-sm text-gray-600">Project Advisor</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative rounded-full overflow-hidden w-24 h-24 mb-3 flex items-center justify-center">
+                  <img 
+                    src={getAssetPath("/assets/5345d883-eaba-470f-ab0d-4f2b15047e5d.png")} 
+                    alt="Raghuveer Venkatesh" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-indiana-crimson">Raghuveer Venkatesh</h3>
+                <p className="text-sm text-gray-600">Research Assistant</p>
+              </div>
+            </div>
           </ProjectCard>
         </div>
       </section>

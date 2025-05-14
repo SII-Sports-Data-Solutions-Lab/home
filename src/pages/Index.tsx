@@ -84,11 +84,6 @@ const Index: React.FC = React.memo(() => {
             Explore Our Projects
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Link to="/team">
-            <Button variant="outline" className="border-indiana-crimson text-indiana-crimson hover:bg-indiana-crimson/10 px-6 py-3 text-lg">
-              Meet Our Team
-            </Button>
-          </Link>
         </div>
       </div>
       
@@ -242,9 +237,6 @@ const Index: React.FC = React.memo(() => {
                   <p className="text-gray-700">
                     We provide hands-on learning opportunities through our capstone courses, innovation sprints, and industry partnerships, giving students real-world experience.
                   </p>
-                  <Link to="/team" className="mt-4 inline-flex items-center text-indiana-crimson hover:text-indiana-red">
-                    Meet Our Team <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
                 </div>
               </div>
             </div>
@@ -268,8 +260,8 @@ const Index: React.FC = React.memo(() => {
                 <p>A comprehensive analysis of customer reviews for digital fitness equipment, using natural language processing and machine learning techniques to uncover patterns and insights.</p>
                 <Link to="/projects/review-analysis" className="inline-block mt-4 text-indiana-crimson hover:underline font-medium">Learn More <ArrowRight className="ml-1 inline h-4 w-4" /></Link>
               </ProjectCard>
-              <ProjectCard title="What’s A Striker Worth?" animationDelay="delay-200">
-                <p>A smart, data-driven tool that predicts a striker’s market value by analyzing their stats, performance, and physical traits—giving clubs, scouts, and managers the insights they need to spot hidden gems and back big investments.</p>
+              <ProjectCard title="What's A Striker Worth?" animationDelay="delay-200">
+                <p>A smart, data-driven tool that predicts a striker's market value by analyzing their stats, performance, and physical traits—giving clubs, scouts, and managers the insights they need to spot hidden gems and back big investments.</p>
                 <Link to="/projects/striker-worth" className="inline-block mt-4 text-indiana-crimson hover:underline font-medium">Learn More <ArrowRight className="ml-1 inline h-4 w-4" /></Link>
               </ProjectCard>
               <ProjectCard title="NFL Big Data Bowl GuideBook" animationDelay="delay-300">

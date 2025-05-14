@@ -6,8 +6,6 @@ import { BrowserRouter } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import AppRoutes from "./AppRoutes";
-import ChatBox from "@/components/ChatBox"; // Import the ChatBox component
-
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -25,7 +23,6 @@ const App = () => (
           <Toaster />
           <Sonner />
           <AppRoutes />
-          <ChatBox /> {/* Add the ChatBox component here */}
         </HashRouter >
       </TooltipProvider>
     </ErrorBoundary>
